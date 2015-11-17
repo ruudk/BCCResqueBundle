@@ -85,11 +85,6 @@
                                         {% for argname, argvalue in job.args %}
                                             <li>
                                                 <span>{{ argname }}</span>
-                                                {% if argvalue is iterable %}
-                                                    <em class="pull-right">{{ argvalue|join(', ') }}</em>
-                                                {% else %}
-                                                    <em class="pull-right">{{ argvalue }}</em>
-                                                {% endif %}
                                             </li>
                                         {% endfor %}
                                     </ul>
